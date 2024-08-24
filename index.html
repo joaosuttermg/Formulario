@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/global.css" />
+    <link rel="stylesheet" href="CSS/styles.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div>
+                <h1>CRIE E COMPARTILHE SEU EVENTO</h1>
+                <p>o primeiro passo, é preencher <br>
+                    esse formulário de inscrição</p>
+            </div>
+        </header>
+
+        <main class="main">
+            <form class="form-body">
+                <fieldset class="fieldset">
+                    <legend><h2>Informações do evento</h2></legend>
+                    <legend><strong>Título do evento</legend>
+                    <input type="text" placeholder="minimo 8 caracteres" min="8"/>
+                    <legend>Link do evento</legend>
+                    <input type="url" placeholder="comece com https://" required/>
+                    <legend>Whatsapp para contato</legend>
+                    <input type="tel" placeholder="+55 " pattern="[0-9]{10}" required/>
+                    <legend>Informações extras</legend>
+                    <textarea required></textarea>
+                    <legend>Categoria</legend>
+                    <div class="categoria">
+                    <select>
+                        <option value="">Selecione uma categoria</strong></option>
+                        <option value="1">Ao vivo</option>
+                        <option value="2">PodCast</option>
+                        <option value="3">Mentoria</option>
+
+                    </select>
+                    </div>
+                    
+                    
+                </fieldset>
+
+                <fieldset class="Privacidade">
+                    <legend><h2><strong>Privacidade</h2></legend>
+                    <legend>E-mail do administrador</legend>
+                    <input type="email" placeholder="informe o email" required/>
+                    <legend>senha de acesso para participantes</legend>
+                    <input type="password" placeholder="no minimo 8 caracteres" min="8">
+                    <div class="checkbox">
+                    <legend>Evento Privado</strong></legend>
+                    <input type="checkbox"  name="Privado" id="1">
+                    </div>
+                </fieldset>
+
+
+                <fieldset class="Datas">
+                    <legend><h2><strong>Datas e horários</h2></legend>
+                    <legend>Data do evento</legend>
+                    <input type="date" placeholder="informe a data do evento " required/>
+                    <legend>Horário do evento</legend>
+                    <input type="time" required/>
+                    <legend>Horário do encerramento do evento</strong></legend>
+                    <input type="time" required/>
+                    
+                </fieldset>
+
+                <footer>
+                    <button class="glow-on-hover" type="button">SALVAR</button>
+                </footer>
+            </form>
+        </main>
+    </div>
+</body>
+
+</html>
